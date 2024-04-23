@@ -6,7 +6,8 @@ dnspython==2.6.1
 geographiclib==2.0
 geopy==2.4.1
 idna==3.6
+pymongo==4.6.3
 python-dotenv==1.0.1
 requests==2.31.0
-ryanair-py==3.0.0
+Ryanair-Python @ git+https://github.com/victorbmlabs/RyanAir-Python@a0f3d932bf5a53fbd85e750f10cc5b0c79e83dff
 urllib3==2.2.1

@@ -1,0 +1,333 @@
+[
+    {
+        "label": "Ryanair",
+        "importPath": "ryanair",
+        "description": "ryanair",
+        "isExtraImport": true,
+        "detail": "ryanair",
+        "documentation": {}
+    },
+    {
+        "label": "Ryanair",
+        "importPath": "ryanair",
+        "description": "ryanair",
+        "isExtraImport": true,
+        "detail": "ryanair",
+        "documentation": {}
+    },
+    {
+        "label": "Flight",
+        "importPath": "ryanair.types",
+        "description": "ryanair.types",
+        "isExtraImport": true,
+        "detail": "ryanair.types",
+        "documentation": {}
+    },
+    {
+        "label": "Flight",
+        "importPath": "ryanair.types",
+        "description": "ryanair.types",
+        "isExtraImport": true,
+        "detail": "ryanair.types",
+        "documentation": {}
+    },
+    {
+        "label": "Flight",
+        "importPath": "ryanair.types",
+        "description": "ryanair.types",
+        "isExtraImport": true,
+        "detail": "ryanair.types",
+        "documentation": {}
+    },
+    {
+        "label": "Flight",
+        "importPath": "ryanair.types",
+        "description": "ryanair.types",
+        "isExtraImport": true,
+        "detail": "ryanair.types",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "database",
+        "description": "database",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "heapq",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "heapq",
+        "description": "heapq",
+        "detail": "heapq",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo.mongo_client",
+        "description": "pymongo.mongo_client",
+        "isExtraImport": true,
+        "detail": "pymongo.mongo_client",
+        "documentation": {}
+    },
+    {
+        "label": "ServerApi",
+        "importPath": "pymongo.server_api",
+        "description": "pymongo.server_api",
+        "isExtraImport": true,
+        "detail": "pymongo.server_api",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateOne",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "certifi",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "certifi",
+        "description": "certifi",
+        "detail": "certifi",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "concurrent.futures",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "add_daily_oneways",
+        "importPath": "airlines.ryan",
+        "description": "airlines.ryan",
+        "isExtraImport": true,
+        "detail": "airlines.ryan",
+        "documentation": {}
+    },
+    {
+        "label": "ryanair",
+        "importPath": "airlines.ryan",
+        "description": "airlines.ryan",
+        "isExtraImport": true,
+        "detail": "airlines.ryan",
+        "documentation": {}
+    },
+    {
+        "label": "airports",
+        "importPath": "airlines.ryan",
+        "description": "airlines.ryan",
+        "isExtraImport": true,
+        "detail": "airlines.ryan",
+        "documentation": {}
+    },
+    {
+        "label": "find_path",
+        "importPath": "misc.dijkstra",
+        "description": "misc.dijkstra",
+        "isExtraImport": true,
+        "detail": "misc.dijkstra",
+        "documentation": {}
+    },
+    {
+        "label": "add_daily_oneways",
+        "kind": 2,
+        "importPath": "airlines.ryan",
+        "description": "airlines.ryan",
+        "peekOfCode": "def add_daily_oneways(delta: int = 1):\n    start = datetime.today().date() + timedelta(days=delta)\n    data: list[Flight] = []\n    for code in airports:\n        f = ryanair.get_cheapest_flights(code, start, start + timedelta(days=1))\n        data.extend(f)\n    print(f\"Adding {len(data)} flights to database\")\n    db.add_ryanair_oneways(data)",
+        "detail": "airlines.ryan",
+        "documentation": {}
+    },
+    {
+        "label": "ryanair",
+        "kind": 5,
+        "importPath": "airlines.ryan",
+        "description": "airlines.ryan",
+        "peekOfCode": "ryanair = Ryanair(\"EUR\")\nwith open(\"airlines/iata_codes_ryanair.txt\") as f:\n    airports = f.read().split(\",\")\ndef add_daily_oneways(delta: int = 1):\n    start = datetime.today().date() + timedelta(days=delta)\n    data: list[Flight] = []\n    for code in airports:\n        f = ryanair.get_cheapest_flights(code, start, start + timedelta(days=1))\n        data.extend(f)\n    print(f\"Adding {len(data)} flights to database\")",
+        "detail": "airlines.ryan",
+        "documentation": {}
+    },
+    {
+        "label": "dijkstra_with_constraints",
+        "kind": 2,
+        "importPath": "misc.dijkstra",
+        "description": "misc.dijkstra",
+        "peekOfCode": "def dijkstra_with_constraints(\n    start, end, flights: list[Flight], max_stops, max_price, max_days_between\n):\n    heap = [(0, start, 0, [])]  # (total price, current airport, stops, path)\n    visited = set()\n    while heap:\n        total_price, current, stops, path = heapq.heappop(heap)\n        if current == end:\n            return total_price, path\n        if current in visited:",
+        "detail": "misc.dijkstra",
+        "documentation": {}
+    },
+    {
+        "label": "find_path",
+        "kind": 2,
+        "importPath": "misc.dijkstra",
+        "description": "misc.dijkstra",
+        "peekOfCode": "def find_path(flights: list[Flight]):\n    start_airport = \"ZAD\"  # Tirana\n    end_airport = \"EIN\"  # Bari\n    max_stops = 3\n    max_price = 110  # Set your maximum price\n    max_days_between = 2  # Set your maximum days between flights\n    total_price, path = dijkstra_with_constraints(\n        start_airport, end_airport, flights, max_stops, max_price, max_days_between\n    )\n    if path:",
+        "detail": "misc.dijkstra",
+        "documentation": {}
+    },
+    {
+        "label": "add_ryanair_oneways",
+        "kind": 2,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "def add_ryanair_oneways(flights: List[Flight]):\n    operations = []\n    for flight in flights:\n        operations.append(\n            UpdateOne({\"_id\": flight._id}, {\"$set\": flight.mongo_dict()}, upsert=True)\n        )\n    ryanair_oneways.bulk_write(operations)\ndef all_ryanair_oneways(filter: dict = None) -> list[Flight]:\n    # Fetch all ryanair oneways from your database with the given filters.\n    rows = ryanair_oneways.find(filter)",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "all_ryanair_oneways",
+        "kind": 2,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "def all_ryanair_oneways(filter: dict = None) -> list[Flight]:\n    # Fetch all ryanair oneways from your database with the given filters.\n    rows = ryanair_oneways.find(filter)\n    return [Flight(**row) for row in rows]",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "connection_string",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "connection_string = os.getenv(\"MONGO_COONNECTION_STRING\")\ndb = os.getenv(\"MONGO_DB\")\ncollection = os.getenv(\"MONGO_COLLECTION\")\nif all([connection_string, db, collection]) is False:\n    raise Exception(\"Missing environment variables\")\n# Create a new client and connect to the server\nclient = MongoClient(\n    connection_string, server_api=ServerApi(\"1\"), tlsCAFile=certifi.where()\n)\ndb = client[db]",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "db = os.getenv(\"MONGO_DB\")\ncollection = os.getenv(\"MONGO_COLLECTION\")\nif all([connection_string, db, collection]) is False:\n    raise Exception(\"Missing environment variables\")\n# Create a new client and connect to the server\nclient = MongoClient(\n    connection_string, server_api=ServerApi(\"1\"), tlsCAFile=certifi.where()\n)\ndb = client[db]\nryanair_oneways = db[collection]",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "collection",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "collection = os.getenv(\"MONGO_COLLECTION\")\nif all([connection_string, db, collection]) is False:\n    raise Exception(\"Missing environment variables\")\n# Create a new client and connect to the server\nclient = MongoClient(\n    connection_string, server_api=ServerApi(\"1\"), tlsCAFile=certifi.where()\n)\ndb = client[db]\nryanair_oneways = db[collection]\n# Send a ping to confirm a successful connection",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "client = MongoClient(\n    connection_string, server_api=ServerApi(\"1\"), tlsCAFile=certifi.where()\n)\ndb = client[db]\nryanair_oneways = db[collection]\n# Send a ping to confirm a successful connection\ntry:\n    client.admin.command(\"ping\")\n    print(\"Sucessfully connected to MongoDB!\")\nexcept Exception as e:",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "db = client[db]\nryanair_oneways = db[collection]\n# Send a ping to confirm a successful connection\ntry:\n    client.admin.command(\"ping\")\n    print(\"Sucessfully connected to MongoDB!\")\nexcept Exception as e:\n    print(e)\ndef add_ryanair_oneways(flights: List[Flight]):\n    operations = []",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "ryanair_oneways",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "ryanair_oneways = db[collection]\n# Send a ping to confirm a successful connection\ntry:\n    client.admin.command(\"ping\")\n    print(\"Sucessfully connected to MongoDB!\")\nexcept Exception as e:\n    print(e)\ndef add_ryanair_oneways(flights: List[Flight]):\n    operations = []\n    for flight in flights:",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    # add_daily_oneways(6)\n    # add_daily_oneways(7)\n    # Dijkstra algorithm testing\n    # ryanair = Ryanair(\"EUR\")\n    # data: list[Flight] = []\n    # start = datetime.today().date() + timedelta(days=1)\n    # for code in airports:\n    #     f = ryanair.get_cheapest_flights(code, start, start + timedelta(days=1))\n    #     data.extend(f)",
+        "detail": "main",
+        "documentation": {}
+    }
+]
