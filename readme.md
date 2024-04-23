@@ -1,4 +1,4 @@
-# Flightjet
+# Dataflight
 
 Personal project to collect and monitor as much price data across multiple airlines as possible. This collection of scripts powers https://viatic.cheap/
 
